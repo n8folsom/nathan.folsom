@@ -2,22 +2,19 @@
 
 <html>
 <head>
-<title>Nathan Folsom Portfolio</title>
+<title>Nate Folsom Portfolio</title>
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700"
 rel="stylesheet">
   <style>
 
-  .skillsImg {
-    position: relative;
-    top: 200px;
-    z-index: -1;
-  }
+
+
   .portfoliotitle {
     width: 100%;
-    height: 160px;
+    height: 140px;
     position: fixed;
     background-color: rgba(255,255,255, 1);
-    top: 20px;
+    top: 0px;
     z-index: 0;
     border-bottom: 10px black solid;
     border-top: 10px black solid;
@@ -30,7 +27,7 @@ rel="stylesheet">
       text-align: center;
       color: black;
       font-family: 'Noto Sans TC', sans-serif;
-      z-index: 1;
+      /*z-index: 1;*/
 
     }
     p {
@@ -52,7 +49,7 @@ rel="stylesheet">
       font-size: 50px;
       position: relative;
       left: -100px;
-      top: -90px;
+      top: -110px;
     }
     .portfolio {
       font-size: 50px;
@@ -76,8 +73,55 @@ rel="stylesheet">
       color: rgba(255,255,255,1);
 
     }
+    .skillsImg {
+      border: 2px solid white;
+      position: fixed;
+      top: 160px;
+      display: block;
+      margin: 0 auto;
+      width: 95%;
 
+    }
+    svg {
+      diplay: block;
+      position: relative;
+      top: 0;
+      margin: 0 auto;
+      width: 95%;
 
+    }
+    img {
+      z-index: -1;
+      display: block;
+      position: absolute;
+      margin: 0 auto;
+      width: 95%;
+    }
+    #PortfolioOverlays .a {
+      fill: none;
+      stroke: #EEE;
+      stroke-miterlimit: 10;
+      stroke-width: 6.81px;
+    }
+    #PortfolioOverlays .b {
+      fill: #FFFFFF;
+      stroke: #EEE;
+      stroke-miterlimit: 10;
+      stroke-width: 6.81px;
+      opacity: .5;
+    }
+    #PortfolioOverlays .c {
+      fill: none;
+      stroke: #EEE;
+      stroke-miterlimit: 10;
+      stroke-width: 6.81px;
+    }
+    #PortfolioOverlays .d {
+      fill: none;
+      stroke: #EEE;
+      stroke-miterlimit: 10;
+      stroke-width: 6.81px;
+    }
   </style>
 </head>
 <body>
@@ -96,10 +140,14 @@ rel="stylesheet">
 </div>
 </div>
 <div class="skillsImg">
-
-
-
-<img src="Portfolio_home_V2.png"/>
+  <svg id="PortfolioOverlays" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1494 623">
+    <title>PortfolioOverlays</title>
+    <polygon class="a" points="565 3 3 559 3 3 565 3"/>
+    <polygon class="b" points="1059 3 437 619 3 619 3 559 565 3 1059 3"/>
+    <polygon class="c" points="1490 3 1490 66 932 619 437 619 1059 3 1490 3"/>
+    <polygon class="d" points="1490 66 1490 619 932 619 1490 66"/>
+  </svg>
+  <img src="Portfolio_home_V2.png"/>
 </div>
 <p></p>
 </body>
