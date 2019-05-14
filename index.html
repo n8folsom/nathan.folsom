@@ -45,41 +45,21 @@ rel="stylesheet">
       left: 10%;
       top: -65px;
     }
-    /*.contact {
-      position: absolute;
-      top: -10px;
-      left: 90%;
-      margin: 10px 10px 0 0;
-      text-align: left;
-
-    }
-    ul.contactOptions {
-      list-style-type: none;
-      position: relative;
-      left: -40px;
-      top: -20px;
-      color: rgba(255,255,255,1);
-
-    }*/
-
     .skillsImg {
       position: fixed;
       top: 115px;
       display: block;
       width: 100%;
-      margin: 0 auto;
-
+      border: 1px red solid;
+      background-image: url("PortfolioOverlays_MVP image.png")
     }
-    .skills {
+    /*.skills {
       z-index: -1;
       display: block;
       position: absolute;
       top: -1px;
       width: 100%;
-    }
-    .PortfolioOverlays {
-      width: 100%;
-    }
+    }*/
     nav {
       display: inline;
       position: absolute;
@@ -87,7 +67,7 @@ rel="stylesheet">
       left: 67%;
       font-size: 40px;
       height: 0px;
-}
+    }
     .contact, .about {
       padding: 20.5px 30px;
       background-color: none;
@@ -158,28 +138,17 @@ rel="stylesheet">
 <a href="index.html"><div class="UXp"
   <h2>UX</h2>
 </div></a>
-<!--
-<div class="contact">
-  <p>Contact</p>
-  <ul class="contactOptions">
-    <li><a target="_blank" href="mailto:n8folsom@gmail.com">E-mail</a></li>
-    <li><a href="https://www.linkedin.com/in/nate-folsom-seattle/">LinkedIn</a></li>
-  </ul>
-
-</div>
--->
 </div>
 <div class="skillsImg">
-  <svg class="PortfolioOverlays" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1712.21 826.61">
-    <title>PortfolioOverlays</title>
+  <svg class="PortfolioOverlays" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 800">
     <style>
-    .a, .b, .c, .d {
+    .a, .b, .c {
       fill: rgba(255,255,255,0);
       stroke: #000;
       stroke-miterlimit: 10;
       stroke-width: 6.81px;
     }
-    .t0, .t1, .t2, .t3 {
+    .ta, .tb, .tc {
       font-size: 42px;
       fill: #231f20;
       font-family: 'Noto Sans TC', sans-serif;
@@ -187,38 +156,23 @@ rel="stylesheet">
       letter-spacing: 1px;
       opacity: 0;
     }
-    .Synth {
-      left: 100px;
 
-    }
-    .Sketch {
-      left: 450px;
-      top: -30px;
-    }
-    .Wire {
-      left: 840px;
-      top: -20px;
-    }
-    .Proto {
-      left: 1220px;
-      top: 20px;
-    }
 
     </style>
-    <a href=""><g id="panel1">
-      <polygon class="a" points="1532.4 13.68 1532.4 13.86 870.7 813.68 92.54 813.68 754.38 13.68 1532.4 13.68"/>
-      <text class="t0" transform="translate(50 77)">Synthesize</text>
+    <a href="MoonMotorcyces.html"><g id="panel1">
+      <polygon class="a" points="754.38 13.68 92.54 813.68 92.4 813.68 92.4 13.68 754.38 13.68"/>
+      <text class="ta" transform="translate(250 77)">Moon Motorcycles</text>
     </g></a>
-    <a href=""><g id="panel2">
-      <polygon class="b" points="754.38 13.68 92.54 813.68 92.4 813.68 92.4 13.68 754.38 13.68"/>
-      <text class="t1" transform="translate(500 262)">Sketch</text>
+    <a href="Costco.html"><g id="panel2">
+      <polygon class="b" points="1532.4 13.68 1532.4 13.86 870.7 813.68 92.54 813.68 754.38 13.68 1532.4 13.68"/>
+      <text class="tb" transform="translate(800 262)">Costco</text>
     </g></a>
-    <a href=""><g id="panel3">
+    <a href="NeuFarms.html"><g id="panel3">
       <polygon class="c" points="1532.4 13.86 1532.4 813.68 870.7 813.68 1532.4 13.86"/>
-      <text class="t2" transform="translate(824 391)">Wireframe</text>
+      <text class="tc" transform="translate(1224 501)">NeuFarms</text>
     </g></a>
   </svg>
-  <img class="skills" src="Portfolio_home_V2.png"/>
+  <!--<img class="skills" src="PortfolioOverlays_MVP image.png"/>-->
 </div>
 <footer>
 <p>©Nate Folsom 2019</p>
@@ -229,19 +183,16 @@ rel="stylesheet">
 var panel1 = document.getElementById("panel1");
 var panel2 = document.getElementById("panel2");
 var panel3 = document.getElementById("panel3");
-var panel4 = document.getElementById("panel4");
+
 
 var changestylea = document.getElementsByClassName("a")[0];
 var changestyleb = document.getElementsByClassName("b")[0];
 var changestylec = document.getElementsByClassName("c")[0];
-var changestyled = document.getElementsByClassName("d")[0];
-
-var texta = document.getElementsByClassName("t0")[0];
-var textb = document.getElementsByClassName("t1")[0];
-var textc = document.getElementsByClassName("t2")[0];
-var textd = document.getElementsByClassName("t3")[0];
 
 
+var texta = document.getElementsByClassName("ta")[0];
+var textb = document.getElementsByClassName("tb")[0];
+var textc = document.getElementsByClassName("tc")[0];
 
 function panelHovera() {
   changestylea.style.animation = "overlay .5s both";
@@ -267,14 +218,7 @@ function noverlayHoverc() {
   changestylec.style.animation = "noverlay .25s both";
   textc.style.animation = "textNopacity .25s both";
 }
-function panelHoverd() {
-  changestyled.style.animation = "overlay .5s both";
-  textd.style.animation = "textOpacity .25s both";
-}
-function noverlayHoverd() {
-  changestyled.style.animation = "noverlay .25s both";
-  textd.style.animation = "textNopacity .25s both";
-}
+
 
 panel1.addEventListener("mouseover", panelHovera)
 panel1.addEventListener("mouseout", noverlayHovera)
@@ -282,8 +226,7 @@ panel2.addEventListener("mouseover", panelHoverb)
 panel2.addEventListener("mouseout", noverlayHoverb)
 panel3.addEventListener("mouseover", panelHoverc)
 panel3.addEventListener("mouseout", noverlayHoverc)
-panel4.addEventListener("mouseover", panelHoverd)
-panel4.addEventListener("mouseout", noverlayHoverd)
+
 
 
 </script>
