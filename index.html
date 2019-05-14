@@ -94,34 +94,28 @@ rel="stylesheet">
 
     @keyframes overlay {
       0% {
-        fill: rgba(255,255,255,0);
+        fill: rgba(255,255,255,.7);
       }
       100% {
-        fill: rgba(255,255,255,.7);
+        fill: rgba(255,255,255,0.2);
       }
     }
     @keyframes noverlay {
       0% {
-        fill: rgba(255,255,255,.7);
+        fill: rgba(255,255,255,0.2);
       }
       100% {
-        fill: rgba(255,255,255,0);
+        fill: rgba(255,255,255,.7);
       }
     }
     @keyframes textOpacity {
-      0% {
-        opacity: 0;
-      }
       100% {
-        opacity: 1;
+        stroke-width: 8px;
       }
     }
     @keyframes textNopacity {
-      0% {
-        opacity: 1;
-      }
       100% {
-        opacity: 0;
+        stroke-width: 2px;
       }
     }
   </style>
@@ -141,10 +135,10 @@ rel="stylesheet">
   <svg class="PortfolioOverlays" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 800">
     <style>
     .a, .b, .c {
-      fill: rgba(255,255,255,0);
+      fill: rgba(255,255,255,.7);
       stroke: #000;
       stroke-miterlimit: 10;
-      stroke-width: 6.81px;
+      stroke-width: 8px;
     }
     .ta, .tb, .tc {
       font-size: 42px;
@@ -152,24 +146,31 @@ rel="stylesheet">
       font-family: 'Noto Sans TC', sans-serif;
       font-weight: bold;
       letter-spacing: 1px;
-      opacity: 0;
+      opacity: 1;
     }
-
+    .ba, .bb, .bc {
+      fill: #FFF;
+      stroke: #000;
+      stroke-width: 2px;
+    }
 
 
     </style>
     <a href="MoonMotorcyces.html"><g id="panel1">
-      <polygon class="a" points="661.98 0 0.14 800 0 800 0 0 661.98 0"/>
+      <polygon class="a" points="662.04 0.69 0.9 650.69 0.76 650.69 0.76 0.69 662.04 0.69"/>
+      <rect class="ba" x="80" y="80" height="120" width="300" rx="1" />
       <text class="ta" transform="translate(100 130)">Moon</text>
       <text class="ta" transform="translate(100 180)">Motorcycles</text>
     </g></a>
     <a href="Costco.html"><g id="panel2">
-      <polygon class="b" points="1440 0 1440 0.18 778.3 800 0.14 800 661.98 0 1440 0"/>
-      <text class="tb" transform="translate(800 262)">Costco</text>
+      <polygon class="b" points="1439.24 0.69 1439.24 0.83 778.24 650.69 0.9 650.69 662.04 0.69 1439.24 0.69"/>
+      <rect class="bb" x="620" y="305" height="60" width="180" rx="1" />
+      <text class="tb" transform="translate(640 350)">Costco</text>
     </g></a>
     <a href="NeuFarms.html"><g id="panel3">
-      <polygon class="c" points="1440 0.18 1440 800 778.3 800 1440 0.18"/>
-      <text class="tc" transform="translate(1100 670)">NeuFarms</text>
+      <polygon class="c" points="1439.24 0.83 1439.24 650.69 778.24 650.69 1439.24 0.83"/>
+      <rect class="bc" x="1080" y="475" height="60" width="255" rx="1" />
+      <text class="tc" transform="translate(1100 520)">NeuFarms</text>
     </g></a>
   </svg>
   <!--<img class="skills" src="PortfolioOverlays_MVP image.png"/>-->
@@ -190,10 +191,10 @@ var changestyleb = document.getElementsByClassName("b")[0];
 var changestylec = document.getElementsByClassName("c")[0];
 
 
-var texta1 = document.getElementsByClassName("ta")[0];
+var texta1 = document.getElementsByClassName("ba")[0];
 var texta2 = document.getElementsByClassName("ta")[1];
-var textb = document.getElementsByClassName("tb")[0];
-var textc = document.getElementsByClassName("tc")[0];
+var textb = document.getElementsByClassName("bb")[0];
+var textc = document.getElementsByClassName("bc")[0];
 
 function panelHovera() {
   changestylea.style.animation = "overlay .5s both";
