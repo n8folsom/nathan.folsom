@@ -42,24 +42,22 @@ rel="stylesheet">
       font-size: 80px;
       font-weight: bold;
       position: absolute;
-      left: 10%;
+      left: 7%;
       top: -65px;
     }
     .skillsImg {
       position: fixed;
+      left: 50%;
+      transform: translateX(-50%);
       top: 115px;
       display: block;
-      width: 100%;
-      border: 1px red solid;
-      background-image: url("PortfolioOverlays_MVP image.png")
+      width: 99%;
+      background-image: url("PortfolioOverlays_MVP image.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      max-width: 1440px;
+      max-height: 700px;
     }
-    /*.skills {
-      z-index: -1;
-      display: block;
-      position: absolute;
-      top: -1px;
-      width: 100%;
-    }*/
     nav {
       display: inline;
       position: absolute;
@@ -69,7 +67,7 @@ rel="stylesheet">
       height: 0px;
     }
     .contact, .about {
-      padding: 20.5px 30px;
+      padding: 20.5px 15px;
       background-color: none;
       display: inline;
       text-decoration: none;
@@ -158,18 +156,20 @@ rel="stylesheet">
     }
 
 
+
     </style>
     <a href="MoonMotorcyces.html"><g id="panel1">
-      <polygon class="a" points="754.38 13.68 92.54 813.68 92.4 813.68 92.4 13.68 754.38 13.68"/>
-      <text class="ta" transform="translate(250 77)">Moon Motorcycles</text>
+      <polygon class="a" points="661.98 0 0.14 800 0 800 0 0 661.98 0"/>
+      <text class="ta" transform="translate(100 130)">Moon</text>
+      <text class="ta" transform="translate(100 180)">Motorcycles</text>
     </g></a>
     <a href="Costco.html"><g id="panel2">
-      <polygon class="b" points="1532.4 13.68 1532.4 13.86 870.7 813.68 92.54 813.68 754.38 13.68 1532.4 13.68"/>
+      <polygon class="b" points="1440 0 1440 0.18 778.3 800 0.14 800 661.98 0 1440 0"/>
       <text class="tb" transform="translate(800 262)">Costco</text>
     </g></a>
     <a href="NeuFarms.html"><g id="panel3">
-      <polygon class="c" points="1532.4 13.86 1532.4 813.68 870.7 813.68 1532.4 13.86"/>
-      <text class="tc" transform="translate(1224 501)">NeuFarms</text>
+      <polygon class="c" points="1440 0.18 1440 800 778.3 800 1440 0.18"/>
+      <text class="tc" transform="translate(1100 670)">NeuFarms</text>
     </g></a>
   </svg>
   <!--<img class="skills" src="PortfolioOverlays_MVP image.png"/>-->
@@ -190,17 +190,22 @@ var changestyleb = document.getElementsByClassName("b")[0];
 var changestylec = document.getElementsByClassName("c")[0];
 
 
-var texta = document.getElementsByClassName("ta")[0];
+var texta1 = document.getElementsByClassName("ta")[0];
+var texta2 = document.getElementsByClassName("ta")[1];
 var textb = document.getElementsByClassName("tb")[0];
 var textc = document.getElementsByClassName("tc")[0];
 
 function panelHovera() {
   changestylea.style.animation = "overlay .5s both";
-  texta.style.animation = "textOpacity .25s both";
+  texta1.style.animation = "textOpacity .25s both";
+  texta2.style.animation = "textOpacity .25s both";
+
 }
 function noverlayHovera() {
   changestylea.style.animation = "noverlay .25s both";
-  texta.style.animation = "textNopacity .25s both";
+  texta1.style.animation = "textNopacity .25s both";
+  texta2.style.animation = "textNopacity .25s both";
+
 }
 function panelHoverb() {
   changestyleb.style.animation = "overlay .5s both";
