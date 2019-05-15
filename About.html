@@ -16,7 +16,7 @@ rel="stylesheet">
     position: fixed;
     background-color: rgba(255,255,255, 1);
     top: 0px;
-    z-index: 0;
+    z-index: 1;
     border-bottom: 10px black solid;
     border-top: 10px black solid;
 
@@ -54,7 +54,7 @@ rel="stylesheet">
       height: 0px;
 }
     .contact, .about {
-      padding: 20.5px 30px;
+      padding: 20.5px 15px;
       background-color: none;
       display: inline;
       text-decoration: none;
@@ -79,14 +79,27 @@ rel="stylesheet">
     }
     .About {
       position: relative;
-      top: 150px;
-      padding: 10px 80px;
-      left: 10%;
-      margin: 10px 10px 0 0;
+      top: 120px;
+      padding: 10px 80px 0;
+      width: 80%;
+      float: right;
+      border-bottom: 10px black solid;
       text-align: left;
       background-color: white;
       font-size: 30px;
       border-radius: 2px;
+    }
+    .bioPic {
+      position: relative;
+      top: -50px;
+      width: 500px;
+      height: auto;
+      shape-outside: circle();
+      -webkit-shape-outside: circle();
+      float: right;
+      border-radius: 50%;
+      padding-left: 20px;
+      z-index: 0;
     }
   </style>
 </head>
@@ -104,12 +117,13 @@ rel="stylesheet">
 
 <div class="About">
   <h2>About</h2>
-  <p>As a UX Designer, I apply my automotive engineering background <br>
-    and product designer mindset to interaction design, branding, <br>
-    and visual design. Working in both the physical and digital realms <br>
-    has given me a holistic view of design and an avenue into the mind <br>
-    of the user. By expanding on my foundational knowledge of industry-<br>
-    standard software, processes, and concepts I plan to continue my <br>
+  <img class="bioPic" src="Portfolio Grpahics_Bio pic.png"/>
+  <p>As a UX Designer, I apply my automotive engineering background
+    and product designer mindset to interaction design, branding,
+    and visual design. Working in both the physical and digital realms
+    has given me a holistic view of design and an avenue into the mind
+    of the user. By expanding on my foundational knowledge of industry-
+    standard software, processes, and concepts I plan to continue my
     journey through UX as a lifelong learner.
 
 </div>
