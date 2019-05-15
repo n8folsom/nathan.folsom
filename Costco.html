@@ -16,7 +16,7 @@ rel="stylesheet">
     position: fixed;
     background-color: rgba(255,255,255, 1);
     top: 0px;
-    z-index: 0;
+    z-index: 1;
     border-bottom: 10px black solid;
     border-top: 10px black solid;
 
@@ -68,19 +68,11 @@ rel="stylesheet">
       text-decoration: none;
       color: black;
     }
-    footer {
-      width: 100%;
-      height: 50px;
-      position: fixed;
-      bottom: 0px;
-      background-color: white;
-      border-top: 5px black solid;
-      border-bottom: 5px black solid;
-    }
+
     .Content {
       position: relative;
       top: 120px;
-      padding: 10px 80px 0;
+      padding: 10px 80px;
       width: 80%;
       float: right;
       border-bottom: 10px black solid;
@@ -89,6 +81,24 @@ rel="stylesheet">
       font-size: 30px;
       border-radius: 2px;
       height: auto;
+      z-index: 0;
+    }
+    .compA {
+      display: inline;
+      height: 500px;
+      border: 2px black solid;
+      border-radius: 2px;
+    }
+    footer {
+      display: flex;
+      position: relative;
+      top: 120px;
+      justify-content: center;
+      width: 100%;
+      height: 50px;
+      background-color: white;
+      border-top: 5px black solid;
+      border-bottom: 5px black solid;
     }
   </style>
 </head>
@@ -108,6 +118,15 @@ rel="stylesheet">
   <p>This project was a conceptual redesign of the Costco app
     with a team of three designers. The project timeline was two
     weeks and I performed the role of interaction designer.</p>
+    <p> We were tasked with creating a Costco app that was designed
+      around users. From the get-go it was clear
+      that Costco had scaled their website down to fit a mobile screen.
+      My first step was to complete a competitive analysis between the
+       Costco, Target, Sam’s Club, and Amazon apps.</p>
+    <img class ="compA" src="P3/amazon.jpg"/>
+    <img class ="compA" src="P3/costco.jpg"/>
+    <img class ="compA" src="P3/target.jpg"/>
+    <img class ="compA" src="P3/samsclub.jpg"/>
 </div>
 <footer>
 <p>©Nate Folsom 2019</p>
