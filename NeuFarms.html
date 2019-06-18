@@ -7,17 +7,6 @@
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700"
 rel="stylesheet">
 <style>
-  .portfoliotitle {
-    width: 100%;
-    height: 100px;
-    position: fixed;
-    background-color: rgba(255,255,255, 1);
-    top: 0px;
-    z-index: 1;
-    border-bottom: 10px black solid;
-    border-top: 10px black solid;
-
-  }
     body {
       background-image: url("Portfolio Grpahics_SiteBackground v2.png");
       background-size: contain;
@@ -28,39 +17,47 @@ rel="stylesheet">
       color: black;
       font-family: 'Noto Sans TC', sans-serif;
     }
-    .UXp {
-      font-size: 140px;
-      position: absolute;
-      font-weight: bold;
-      left: 50%;
-      top: -60px;
+    header {
+      width: 100%;
+      height: 100px;
+      position: fixed;
+      background-color: rgba(255,255,255, 1);
+      top: 0px;
+      z-index: 1;
+      border-bottom: 10px black solid;
+      border-top: 10px black solid;
     }
-    .titleName {
-      font-size: 80px;
-      font-weight: bold;
-      position: absolute;
-      left: 10%;
-      top: -90px;
-    }
-    nav {
-      display: inline;
-      position: absolute;
-      top: 20px;
-      left: 67%;
-      font-size: 40px;
-      height: 0px;
-    }
-    .contact, .about {
-      padding: 20.5px 15px;
-      background-color: none;
-      display: inline;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .about {
+    .headerItems {
       position: relative;
-      left: -9px;
+      top: -5px;
+      display: flex;
+      align-items: center;
+      height: inherit;
+      width: inherit;
+      justify-content: space-around;
     }
+      .UXp {
+        font-size: 140px;
+        display: inline;
+        font-weight: bold;
+        position: relative;
+        top: -2px;
+      }
+      .titleName {
+        display: inline;
+        font-size: 80px;
+        font-weight: bold;
+      }
+      nav {
+        display: inline;
+        word-spacing: 20px;
+      }
+      @media only screen and (max-width: 1000px){
+
+        .titleName {
+          font-size: 50px;
+        }
+      }
     a {
       text-decoration: none;
       color: black;
@@ -132,6 +129,10 @@ rel="stylesheet">
       width: 69%;
       float: left;
       margin: 15px 15px 15px 0;
+    }
+    a {
+      text-decoration: none;
+      color: black;
     }
     p {
       font-size: 25px;
