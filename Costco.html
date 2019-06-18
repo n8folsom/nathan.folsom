@@ -126,6 +126,11 @@ rel="stylesheet">
       float: left;
       margin: 15px 15px 15px 0;
     }
+    .contentImgR2 {
+      width: 69%;
+      float: right;
+      margin: 15px 0 15px 15px;
+    }
     .imgRow {
       display: flex;
       width: 100%;
@@ -141,60 +146,11 @@ rel="stylesheet">
       border-radius: 2px;
       margin: 0 5px;
     }
-    .compA {
-      display: inline;
-      width: 23%;
-      border: 2px black solid;
-      border-radius: 2px;
-    }
     .tasks {
       font-size: 25px;
     }
-    .featPrio {
-      height: 400px;
-      width: 800px;
-      float: right;
-      padding: 30px 0 10px 20px;
-    }
-    .taskImg {
-      width: 90%;
-      height: 500px;
-    }
-    .dsgnStudio {
-      display: inline;
-      width: 30%;
-      border: 2px black solid;
-      border-radius: 2px;
-    }
-    .dsgnStudioResult {
-      margin-top: 30px;
-      margin-left: 100px;
-      display: inline;
-      width: 35%;
-      border: 2px black solid;
-      border-radius: 2px;
-    }
-    .wireScreen {
-      display: inline-flex;
-      width: 30%;
-      margin-right: 100px;
-      float: right;
-    }
-    .picBox {
-      width: 90%;
-      margin-left: 5%;
-      margin-top: 10px;
-    }
-    .p3wf {
-      width: 90%;
-    }
-    .pTask {
-      width: 30%;
-      border: 2px black solid;
-      border-radius: 2px;
-    }
-    .costcoIteration {
-      height: 400px;
+    .caseStudyLinks {
+      text-decoration: underline;
     }
     a {
       text-decoration: none;
@@ -214,7 +170,7 @@ rel="stylesheet">
 @media only screen and (max-width: 1000px){
   .Content {
     width: 90%;
-    padding: 10px 0 20px 60px;
+    padding: 10px 1% 20px 60px;
     margin: 20px 0 20px 10%;
       }
   .titleName {
@@ -267,10 +223,9 @@ rel="stylesheet">
 </div>
   <p>I dug deep into the interactions and UI of each app, looking for
   must-have features and design patterns for our redesign.</p>
-  <p>Based on findings from user research we came to the conclusion that
-    the most effective purpose of the Costco app would be strictly for locating
-    deals, coupons, and sales in order to draw more customers to the
-    brick and mortar locations. </p>
+  <p>It was immediately clear that the Costco app was currently just a
+  scaled-down version of the Costco website and was not optimized for
+  the mobile experience.</p>
 </div>
 
 <!-- DESIGN DIRECTION -->
@@ -282,7 +237,7 @@ rel="stylesheet">
     brick and mortar locations. </p>
   <p><span class="emph">KPIs: </span>The business impact of this redesign
     would be monitored through an increase in memberships sold, decrease
-    in average time between store visits, and items sold after being saved
+    in average time between store visits, and items bought after being saved
     in-app by a customer.</p>
 </div>
 
@@ -290,7 +245,7 @@ rel="stylesheet">
 <div class="Content">
   <h2>Feature Prioritization</h2>
   <p>As a team, we discussed and then voted on features in order to determine
-    what would be in the MVP. The result that we arrived at
+    what would be in the MVP. The result we arrived at
     was that the app needed the ability to search for deals, browse deals
     by category, save deals for later, and locate deals at a specific store.
     Managing a current membership or purchasing a new one were also
@@ -315,69 +270,91 @@ rel="stylesheet">
   <h2>Design Studio</h2>
   <p>Keeping the tasks in mind, I hosted a design studio with the team.
   We sketched out the home screen in order to rapidly ideate our UI
-  elements and what features to put where. We then discussed our sketches
-   and combined them into one master sketch incorporating everything we
-    found was effective. </p>
+  elements and what features to put where. </p>
     <div class="imgRow">
     <img class="rowImg" src="P3/designstudio1.png"/>
     <img class="rowImg" src="P3/designstudio2.png"/>
     <img class="rowImg" src="P3/designstudio3.png"/>
   </div>
+  <p>We then discussed our sketches and combined them into one master sketch
+    incorporating everything we found was effective. </p>
 </div>
 
-
+<!-- WIREFRAMING -->
 <div class="Content">
+  <img class="contentImgLS" src="P3/dsgnStudioResult.png"/>
+  <img class="contentImgS" src="P3/1.0 Feature page.png"/>
+  <h2>Wireframing</h2>
   <p>Using the results of the design studio, I started wireframing
     the screens in Sketch. </p>
-    <div class="picBox">
-    <img class="dsgnStudioResult" src="P3/dsgnStudioResult.png"/>
-    <img class="wireScreen" src="P3/1.0 Feature page.png"/>
-  </div>
+    <p>In order to make sure I wireframed every necessary screen,
+    I wrote screen flows for each task. Each screen flow is a list of
+    the steps that the user would go through to complete each task. Through
+    this process, I could see which screens would be
+    visited and if they required any different display states.</p>
 </div>
-<div class="Content">
-  <p>In order to make sure I wireframed every necessary screen,
-  I wrote screen flows for each task. Each screen flow is a list of
-  the steps that the user would go through to complete each task. By
-  listing out these steps, I could see which screens they would be
-  visiting and if there were different display states needed for any of
-  these screens.</p>
 
-</div>
+<!-- LO-FI WIREFRAME -->
 <div class="Content">
+  <img class="contentImgL2" src="P3/P3 Wireframe.png"/>
+  <h2>Lo-fi Wireframe</h2>
   <p>This quick and dirty wireframe served as the basis for the
     digital prototype. </p>
-  <img class="p3wf" src="P3/P3 Wireframe.png"/>
 </div>
+
+<!-- PROTOTYPE -->
 <div class="Content">
+  <img class="contentImgR2" src="P3/P3 Prototype.png"/>
+  <h2>Prototyping</h2>
   <p>The first step in turning the wireframe into a prototype was
     updating any necessary UI elements through the use of symbols. </p>
-    <img class="p3wf" src="P3/P3 Prototype.png"/>
 </div>
+
+<!-- TASK SCENARIOS -->
 <div class="Content">
+  <img class="contentImgLS" src="P3/1.1.1 Deal Page.png"/>
+  <img class="contentImgLS" src="P3/1.1.1 Deal Page V2.png"/>
+  <h2>Usability Scenarios</h2>
   <p>Next I wrote task scenarios in collaboration with the user
      researcher, which provided specific details for each task.</p>
-     <img class="pTask" src="P3/1.1.1 Deal Page.png"/>
-     <img class="pTask" src="P3/1.1.1 Deal Page V2.png"/>
      <p>Finally, I uploaded my screens to InVision and added hotspots
      for usability testing.</p>
      <p>I also shared the prototype with the visual designer so that
        they could create screen mock-ups for our presentation.</p>
 </div>
+
+<!-- DESIGN ITERATION -->
 <div class="Content">
+  <img class="contentImgS" src="costcoMockup.png"/>
+  <img class="contentImgLS" src="CostcoIteration1.png"/>
+
+  <h2>Design Iteration</h2>
   <p>After the user researcher had completed testing with a
-    few people, we met as a team to discuss findings and simple solutions.</p>
-  <img class="costcoIteration" src="CostcoIteration1.png"/>
-  <img class="costcoIteration" src="costcoIteration2.png"/>
+    handful of users, we met as a team to discuss findings and simple
+    solutions.</p>
+  <p>One of the most notable changes that had to be made was the use of the
+  large Costco "C" as a navigation button. Users did not recognize it as a
+  button and so it was changed to a more traditional tab bar.</p>
 </div>
 
+<!-- NEXT STEPS -->
+<div class="Content">
+  <h2>Next Steps</h2>
+  <p>If this project were to be continued, mobile developers would need to be
+  brought in to begin building the app. The design would also require
+  additional usability testing in order to make sure that users can get the
+  most out of the app.</p>
+</div>
+
+<!-- CASE STUDY LINKS -->
+<div class="Content">
+  <p><a class="caseStudyLinks" href="/">Case Studies</a>
+    > <a class="caseStudyLinks" href="NeuFarms">NeuFarms Mobile App</a>
+  > <a class="caseStudyLinks" href="Costco"><span class="emph">Costco Mobile App</span></a>
+  > <a class="caseStudyLinks" href="MoonMotorcycles">Moon Motorcycles</a></p>
+</div>
 <footer>
 <p class="footerText">©Nate Folsom 2019</p>
 </footer>
-
-<script>
-
-
-
-</script>
 </body>
 </html>
