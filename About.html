@@ -52,34 +52,14 @@ rel="stylesheet">
         display: inline;
         word-spacing: 20px;
       }
-      @media only screen and (max-width: 1000px){
-
-        .titleName {
-          font-size: 50px;
-        }
-      }
-    footer {
-      display: flex;
-      position: relative;
-      top: 120px;
-      justify-content: center;
-      width: 100%;
-      height: 50px;
-      background-color: white;
-      border-top: 5px black solid;
-      border-bottom: 5px black solid;
-    }
     .footerText {
       font-size: 20px;
       position: relative;
       top: -10px;
     }
     .Content {
-      position: relative;
-      top: 120px;
       padding: 10px 10% 20px 60px;
       margin: 10px 0 10px 10%;
-      width: 75%;
       float: right;
       text-align: left;
       background-color: white;
@@ -89,7 +69,6 @@ rel="stylesheet">
     }
     .bioPic {
       position: relative;
-
       margin-top: 30px;
       width: 500px;
       height: auto;
@@ -99,6 +78,29 @@ rel="stylesheet">
       border-radius: 50%;
       padding-left: 20px;
       z-index: 0;
+    }
+    .mainContainer {
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+    .spacer {
+      flex: 1 1 auto;
+    }
+    .spacerTop {
+      flex: 0 0 auto;
+      height: 120px;
+    }
+    footer {
+      flex: 0 0 auto;
+      justify-content: center;
+      width: 100%;
+      height: 50px;
+      background-color: white;
+      border-top: 5px black solid;
+      border-bottom: 5px black solid;
     }
     a {
       text-decoration: none;
@@ -115,6 +117,15 @@ rel="stylesheet">
       font-size: 32px;
       font-weight: bold;
     }
+    @media only screen and (max-width: 1000px){
+      .Content {
+        padding: 10px 1% 20px 60px;
+        margin: 20px 0 20px 6%;
+      }
+      .titleName {
+        font-size: 50px;
+        }
+      }
   </style>
 </head>
 <body>
@@ -130,7 +141,9 @@ rel="stylesheet">
     </nav>
     </div>
   </header>
-
+<div class="mainContainer">
+    <div class="spacerTop">
+    </div>
 <div class="Content">
   <h2>About</h2>
   <img class="bioPic" src="Portfolio Grpahics_Bio pic.png"/>
@@ -148,11 +161,12 @@ rel="stylesheet">
     UX as a lifelong learner.</p>
 
 </div>
-
+<div class="spacer">
+</div>
 <footer>
 <p class="footerText">©Nate Folsom 2019</p>
 </footer>
-
+</div>
 <script>
 
 </script>
