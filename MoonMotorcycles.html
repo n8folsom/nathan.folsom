@@ -52,25 +52,12 @@ rel="stylesheet">
         display: inline;
         word-spacing: 20px;
       }
-    footer {
-      display: flex;
-      position: relative;
-      top: 120px;
-      justify-content: center;
-      width: 100%;
-      height: 50px;
-      background-color: white;
-      border-top: 5px black solid;
-      border-bottom: 5px black solid;
-    }
     .footerText {
       font-size: 20px;
       position: relative;
       top: -10px;
     }
     .Content {
-      position: relative;
-      top: 120px;
       padding: 10px 10% 20px 60px;
       margin: 10px 0 10px 10%;
       float: right;
@@ -142,6 +129,28 @@ rel="stylesheet">
   .caseStudyLinks {
     text-decoration: underline;
   }
+  .mainContainer {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .spacer {
+    flex: 1 1 auto;
+  }
+  .spacerTop {
+    flex: 0 0 auto;
+    height: 120px;
+  }
+  footer {
+    flex: 0 0 auto;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border-top: 5px black solid;
+    border-bottom: 5px black solid;
+  }
     a {
       text-decoration: none;
       color: black;
@@ -182,6 +191,9 @@ rel="stylesheet">
     </div>
   </header>
 
+  <div class="mainContainer">
+    <div class="spacerTop">
+    </div>
 <!-- PROJECT OVERVIEW -->
 <div class="Content">
   <h1>Moon Motorcycles Website Redesign</h1>
@@ -309,10 +321,12 @@ rel="stylesheet">
   | <a class="caseStudyLinks" href="Costco">Costco Mobile App</a>
   | <a class="caseStudyLinks" href="MoonMotorcycles"><span class="emph">Moon Motorcycles</span></a></p>
 </div>
+<div class="spacer">
+</div>
 <footer>
 <p class="footerText">©Nate Folsom 2019</p>
 </footer>
-
+</div>
 <script>
 
 

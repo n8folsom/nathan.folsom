@@ -52,31 +52,12 @@ rel="stylesheet">
         display: inline;
         word-spacing: 20px;
       }
-      @media only screen and (max-width: 1000px){
-
-        .titleName {
-          font-size: 50px;
-        }
-      }
-    footer {
-      display: flex;
-      position: relative;
-      top: 120px;
-      justify-content: center;
-      width: 100%;
-      height: 50px;
-      background-color: white;
-      border-top: 5px black solid;
-      border-bottom: 5px black solid;
-    }
     .footerText {
       font-size: 20px;
       position: relative;
       top: -10px;
     }
     .Content {
-      position: relative;
-      top: 120px;
       padding: 10px 10% 20px 60px;
       margin: 10px 0 10px 10%;
       float: right;
@@ -151,6 +132,28 @@ rel="stylesheet">
     .caseStudyLinks {
       text-decoration: underline;
     }
+    .mainContainer {
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .spacer {
+      flex: 1 1 auto;
+    }
+    .spacerTop {
+      flex: 0 0 auto;
+      height: 120px;
+    }
+    footer {
+      flex: 0 0 auto;
+      justify-content: center;
+      width: 100%;
+      height: 50px;
+      background-color: white;
+      border-top: 5px black solid;
+      border-bottom: 5px black solid;
+    }
     a {
       text-decoration: none;
       color: black;
@@ -190,7 +193,10 @@ rel="stylesheet">
     </nav>
     </div>
   </header>
-
+  <div class="mainContainer">
+    <div class="spacerTop">
+    </div>
+    
 <!-- PROJECT OVERVIEW -->
 <div class="Content">
   <h1>Costco App Redesign</h1>
@@ -205,7 +211,6 @@ rel="stylesheet">
     <li>Kitty Kennedy — Visual Designer</li></ul></p>
   <p><span class="emph">Duration: </span>Two weeks.
       </div>
-</div>
 
 <!-- FIRST STEPS -->
 <div class="Content">
@@ -351,8 +356,11 @@ rel="stylesheet">
   | <a class="caseStudyLinks" href="Costco"><span class="emph">Costco Mobile App</span></a>
   | <a class="caseStudyLinks" href="MoonMotorcycles">Moon Motorcycles</a></p>
 </div>
+<div class="spacer">
+</div>
 <footer>
 <p class="footerText">©Nate Folsom 2019</p>
 </footer>
+</div>
 </body>
 </html>
