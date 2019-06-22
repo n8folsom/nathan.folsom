@@ -63,7 +63,7 @@ rel="stylesheet">
     top: -10px;
   }
   .Content {
-    padding: 10px 10% 20px 60px;
+    padding: 40px 10% 20px 60px;
     margin: 10px 0 10px 10%;
     float: right;
     text-align: left;
@@ -85,7 +85,8 @@ rel="stylesheet">
     min-width: 325px;
     width: 47%;
     float: right;
-    margin: 30px 0 15px 15px;
+    margin: 10px;
+    margin-right: 0;
   }
   .contentImgC {
     width: 100%;
@@ -94,27 +95,32 @@ rel="stylesheet">
   .contentImgS {
     width: 30%;
     float: right;
-    margin: 30px 0 15px 15px;
+    margin: 10px;
+    margin-right: 0;
   }
   .contentImgL {
     width: 47%;
     float: left;
-    margin: 30px 15px 15px 0;
+    margin: 10px;
+    margin-left: 0;
   }
   .contentImgLS {
     width: 30%;
     float: left;
-    margin: 30px 15px 15px 0;
+    margin: 10px;
+    margin-left: 0;
   }
   .contentImgL2 {
     width: 69%;
     float: left;
-    margin: 15px 15px 15px 0;
+    margin: 10px;
+    margin-left: 0;
   }
   .contentImgR2 {
     width: 69%;
     float: right;
-    margin: 15px 0 15px 15px;
+    margin: 10px;
+    margin-right: 0;
   }
   .imgRow {
     display: -webkit-box;
@@ -140,6 +146,9 @@ rel="stylesheet">
   }
   .caseStudyLinks {
     text-decoration: underline;
+  }
+  .Links {
+    margin-top: 0;
   }
   .mainContainer {
     min-height: 100vh;
@@ -186,19 +195,24 @@ rel="stylesheet">
   h1 {
     font-size: 40px;
     font-weight: bold;
+    margin-top: 0;
   }
   h2 {
     font-size: 32px;
     font-weight: bold;
+    display: inline;
   }
 @media only screen and (max-width: 1000px){
 .Content {
-  padding: 10px 1% 20px 60px;
+  padding: 40px 1% 20px 60px;
   margin: 20px 0 20px 6%;
     }
 .titleName {
   font-size: 50px;
     }
+.contentImgL2, .contentImgR2 {
+  width: 100%;
+}
 }
   </style>
 </head>
@@ -321,16 +335,16 @@ rel="stylesheet">
 
 <!-- LO-FI WIREFRAME -->
 <div class="Content">
-  <img class="contentImgL2" src="P3/P3 Wireframe.png"/>
-  <h2>Lo-fi Wireframe</h2>
+  <h2>Lo-fi Wireframe </h2>
+  <img class="contentImgR2" src="P3/P3 Wireframe.png"/>
   <p>This quick and dirty wireframe served as the basis for the
     digital prototype. </p>
 </div>
 
 <!-- PROTOTYPE -->
 <div class="Content">
-  <img class="contentImgR2" src="P3/P3 Prototype.png"/>
   <h2>Prototyping</h2>
+  <img class="contentImgR2" src="P3/P3 Prototype.png"/>
   <p>The first step in turning the wireframe into a prototype was
     updating any necessary UI elements through the use of symbols. </p>
 </div>
@@ -373,7 +387,7 @@ rel="stylesheet">
 
 <!-- CASE STUDY LINKS -->
 <div class="Content">
-  <p><a class="caseStudyLinks" href="/">Case Studies</a>
+  <p class="Links"><a class="caseStudyLinks" href="/">Case Studies</a>
     > <a class="caseStudyLinks" href="NeuFarms">NeuFarms Mobile App</a>
   | <a class="caseStudyLinks" href="Costco"><span class="emph">Costco Mobile App</span></a>
   | <a class="caseStudyLinks" href="MoonMotorcycles">Moon Motorcycles</a></p>
