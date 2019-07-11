@@ -196,17 +196,18 @@ header {
  }
   /* CASE STUDY LINKS */
   .linksContainer {
-    min-width: 100%;
+    min-width: 98%;
+    margin: 10px 0 10px 2%;
+    background-color: white;
+    border-radius: 2px;
     display: flex;
     justify-content: stretch;
   }
   .linksContent {
-    margin: 10px 0 10px 2%;
-    min-width: 98%;
+    min-width: 90%;
     float: left;
     text-align: left;
-    background-color: white;
-    border-radius: 2px;
+    margin: 10px 10% 20px 60px;
     height: auto;
     z-index: 0;
     -webkit-transition: -webkit-transform .5s ease;
@@ -218,7 +219,7 @@ header {
     text-decoration: underline;
   }
   .Links {
-    padding: 10px 10% 20px 60px;
+    /*padding: 10px 10% 20px 60px;*/
   }
 
 /***4.0 - FOOTER***/
