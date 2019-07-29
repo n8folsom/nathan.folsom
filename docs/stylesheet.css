@@ -131,6 +131,8 @@ header {
     -webkit-transition: -webkit-transform .5s ease;
     transition: -webkit-transform .5s ease;
     -o-transition: transform .5s ease;
+    -webkit-transition: margin .5s ease;
+    -o-transition: margin .5s ease;
     transition: margin .5s ease;
   }
 
@@ -138,51 +140,57 @@ header {
   .contentImg {
     min-width: 325px;
     width: 47%;
-    float: right;
-    margin: 10px;
-    margin-right: 0;
   }
-  .contentImgC {
+  .contentImgL {
+    width: 69%;
+  }
+  .contentImgF {
     width: 100%;
-    margin: 30px 0 0;
   }
   .contentImgS {
     width: 30%;
-    float: right;
-    margin: 10px;
-    margin-right: 0;
   }
-  .contentImgL {
-    width: 47%;
-    float: left;
-    margin: 10px;
-    margin-left: 0;
-  }
-  .contentImgLS {
-    width: 30%;
-    float: left;
-    margin: 10px;
-    margin-left: 0;
-  }
-  .contentImgL2 {
-    width: 69%;
-    float: left;
-    margin: 10px;
-    margin-left: 0;
-  }
-  .contentImgR2 {
-    width: 69%;
-    float: right;
-    margin: 10px;
-    margin-right: 0;
+  .contentImgXS {
+    width: 17%;
   }
   .imgRow {
    display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
-   width: 100%;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
    height: auto;
    margin: 0 -5px;
+ }
+ .imgCol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: -5px 0;
+}
+.colImg {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  min-width: 0;
+  width: 100%;
+  height: 100%;
+  margin: 5px 0;
+}
+ .rowL {
+   width: 100%;
+ }
+ .rowM {
+   width: 50%;
  }
  .rowImg {
    -webkit-box-flex: 1;
@@ -191,18 +199,39 @@ header {
    min-width: 0;
    width: 100%;
    height: 100%;
-   border: 2px black solid;
-   border-radius: 2px;
    margin: 0 5px;
  }
+ .hasBorder {
+   border: 2px black solid;
+   border-radius: 2px;
+ }
+ .left {
+   float: left;
+   margin-right: 10px;
+ }
+ .right {
+   float: right;
+   margin-left: 10px;
+ }
+ .topper {
+   margin-top: 30px;
+ }
+ .wrapped {
+   margin-top: 5px;
+ }
+
   /* CASE STUDY LINKS */
   .linksContainer {
     min-width: 98%;
-    margin: 10px 0 10px 2%;
+    margin: 20px 0 10px 2%;
     background-color: white;
     border-radius: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: stretch;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
   }
   .linksContent {
     min-width: 90%;
@@ -210,11 +239,6 @@ header {
     text-align: left;
     margin: 10px 10% 20px 60px;
     height: auto;
-    z-index: 0;
-    -webkit-transition: -webkit-transform .5s ease;
-    transition: -webkit-transform .5s ease;
-    -o-transition: transform .5s ease;
-    transition: margin .5s ease;
   }
   .caseStudyLinks {
     text-decoration: underline;
