@@ -390,7 +390,7 @@ div .full-width.gs-green {
        -ms-flex-align: center;
            align-items: center;
    height: auto;
-   margin: 0;
+   margin: 0 -2%;
  }
  .rowL {
    width: 100%;
