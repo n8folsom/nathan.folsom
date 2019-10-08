@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+
+  <style>
+body {
+  background-color: #000;
+  margin:0;
+  text-align: center;
+}
+h1 {
+  position: relative;
+  top: 20vh;
+  color: #fff;
+  font-size: 50px;
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  z-index: 2;
+  transform: translateY(-100%);
+
+}
+
+.container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-content: start;
+  color: #fff;
+  overflow:hidden;
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  transform: translateX(-50%) translateY(-40%);
+}
+svg {
+  width: 80%;
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  transform: translateX(-50%) translateY(-41%);
+  z-index: 1;
+}
+.cell {
+  border-color: #000;
+  border-style: solid;
+  border-width: 0;
+  opacity:0;
+  height: 0;
+  animation: illuminate .5s ease-out forwards;
+}
+.reload {
+  position: absolute;
+  font-size: 30px;
+  top: 0;
+  left:50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  z-index: 2;
+}
+@keyframes illuminate {
+  100% {opacity:1;}
+}
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 25px;
+    top: 30vh;
+  }
+}
+    </style>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+<body>
+    <h1>just add</h1>
+    <button class="reload" onclick="reload()">Replay Animation</button>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500">
+      <defs>
+        <mask id="mask">
+          <rect x="0" y="0" width="1000" height="500" fill="#fff"/>
+          <text x="500" y="300" text-anchor="middle" fill="#000" font-family="" font-weight="bold" font-size="250">COLOR</text>
+
+        </mask>
+      </defs>
+      <rect x="0" y="0" width="1000" height="500" fill="#000" mask="url(#mask)"/>
+    </svg>
+<script src="landingPageColors.js"></script>
+</body>
+</html>

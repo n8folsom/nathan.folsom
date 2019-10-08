@@ -224,6 +224,11 @@ div .full-width.gs-green {
             text-decoration-color: #2F72A2;
   }
 
+  /* NO ACCENT */
+  div.no-color h1, div.no-color h2, div.no-color h4 {
+    text-decoration: underline;
+  }
+
 /***2.0 - HEADER***/
 /* NAV */
 .nav {
@@ -449,7 +454,24 @@ div .full-width.gs-green {
    float: right;
    margin-left: 10px;
  }
-
+ /* IFRAMES */
+ iframe {
+   width: 100%;
+   height: 600px;
+   display: block;
+   padding-right: -5px;
+ }
+ .no-background iframe {
+   border: 2px white solid;
+   border-radius: 5px;
+ }
+ .background iframe {
+   border: 2px #4d4d4d solid;
+   border-radius: 5px;
+ }
+ iframe.city {
+   background-color: #20353C;
+ }
   /* CASE STUDY LINKS */
   .links {
     list-style-image: url("listbullet.png");
@@ -836,5 +858,8 @@ img.space {
   }
   .separator {
     display: none;
+  }
+  iframe {
+    height: 450px;
   }
   }

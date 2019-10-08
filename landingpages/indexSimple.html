@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+body {
+  background-color: #000;
+  margin:0;
+}
+
+.container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-content: start;
+  color: #fff;
+  overflow:hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.cell {
+  border-color: #000;
+  border-style: solid;
+  background-color: #fff;
+  opacity:0;
+  height: 0;
+  animation: illuminate .5s ease-out forwards;
+}
+#title {
+  position: absolute;
+  top: 40vh;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+  font-size: 80px;
+}
+#title span {
+  opacity: 0;
+  transition: opacity .4s ease;
+}
+.reload {
+  position: absolute;
+  font-size: 30px;
+  top: 0;
+  left:50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  border-radius: 5px;
+}
+@keyframes illuminate {
+  50% {opacity:1;}
+  100% {opacity:1;
+    border-color: #fff;}
+}
+@media only screen and (max-width: 500px) {
+  #title {
+    font-size: 40px;
+  }
+}
+
+    </style>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+<body>
+    <h1 id="title"><span>Hello</span><span>,</span></br><span>Welcome</span></h1>
+    <button class="reload" onclick="reload()">Replay Animation</button>
+<script src="landingPageSimple.js"></script>
+</body>
+</html>
