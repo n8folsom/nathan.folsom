@@ -62,11 +62,18 @@ p {
 .text-left {
   text-align: left;
 }
-.one-col-1 p {
-  text-align: left;
-}
+
 .text-right {
   text-align: right;
+}
+.centered {
+  text-align: center;
+}
+.two-col p, .two-col h2, .two-col h4{
+  text-align: left;
+}
+.inline {
+  display: inline;
 }
 /* SPECIAL TEXT */
 .emph {
